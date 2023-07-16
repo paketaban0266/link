@@ -4,3 +4,6 @@ endif()
 
 add_library(Ableton::Link IMPORTED INTERFACE)
 set_property(TARGET Ableton::Link APPEND PROPERTY
+  INTERFACE_INCLUDE_DIRECTORIES
+  ${CMAKE_CURRENT_LIST_DIR}/include
+)
