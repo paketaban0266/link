@@ -7,3 +7,5 @@ set_property(TARGET Ableton::Link APPEND PROPERTY
   INTERFACE_INCLUDE_DIRECTORIES
   ${CMAKE_CURRENT_LIST_DIR}/include
 )
+# Force C++11 support for consuming targets
+set_property(TARGET Ableton::Link APPEND PROPERTY
