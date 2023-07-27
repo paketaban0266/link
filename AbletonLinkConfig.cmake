@@ -27,3 +27,4 @@ if(APPLE)
   )
 elseif(WIN32)
   set_property(TARGET Ableton::Link APPEND PROPERTY
+  INTERFACE_COMPILE_DEFINITIONS
