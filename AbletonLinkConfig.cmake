@@ -28,3 +28,6 @@ if(APPLE)
 elseif(WIN32)
   set_property(TARGET Ableton::Link APPEND PROPERTY
   INTERFACE_COMPILE_DEFINITIONS
+)
+elseif(CMAKE_SYSTEM_NAME MATCHES "Linux|kFreeBSD|GNU")
+  set_property(TARGET Ableton::Link APPEND PROPERTY
