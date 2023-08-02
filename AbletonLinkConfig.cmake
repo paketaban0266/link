@@ -40,3 +40,4 @@ elseif(CMAKE_SYSTEM_NAME MATCHES "Linux|kFreeBSD|GNU")
     atomic
     pthread
   )
+endif()
