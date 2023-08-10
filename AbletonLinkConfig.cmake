@@ -50,3 +50,5 @@ set_property(TARGET Ableton::Link APPEND PROPERTY
 
 set_property(TARGET Ableton::Link APPEND PROPERTY
  INTERFACE_LINK_LIBRARIES
+AsioStandalone::AsioStandalone
+)
