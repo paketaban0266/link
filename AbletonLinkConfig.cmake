@@ -54,3 +54,6 @@ AsioStandalone::AsioStandalone
 )
 
 set_property(TARGET Ableton::Link APPEND PROPERTY
+INTERFACE_SOURCES
+  ${CMAKE_CURRENT_LIST_DIR}/include/ableton/Link.hpp
+)
