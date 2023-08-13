@@ -38,22 +38,4 @@ elseif(CMAKE_SYSTEM_NAME MATCHES "Linux|kFreeBSD|GNU")
   set_property(TARGET Ableton::Link APPEND PROPERTY
     INTERFACE_LINK_LIBRARIES
     atomic
-    pthread
-  )
-endif()
 
-include(${CMAKE_CURRENT_LIST_DIR}/cmake_include/AsioStandaloneConfig.cmake)
-set_property(TARGET Ableton::Link APPEND PROPERTY
- INTERFACE_LINK_LIBRARIES
- AsioStandalone::AsioStandalone
-)
-
-set_property(TARGET Ableton::Link APPEND PROPERTY
- INTERFACE_LINK_LIBRARIES
-AsioStandalone::AsioStandalone
-)
-
-set_property(TARGET Ableton::Link APPEND PROPERTY
-INTERFACE_SOURCES
-  ${CMAKE_CURRENT_LIST_DIR}/include/ableton/Link.hpp
-)
