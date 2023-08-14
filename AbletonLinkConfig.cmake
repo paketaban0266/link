@@ -39,3 +39,6 @@ elseif(CMAKE_SYSTEM_NAME MATCHES "Linux|kFreeBSD|GNU")
     INTERFACE_LINK_LIBRARIES
     atomic
 
+  pthread
+  )
+endif()
