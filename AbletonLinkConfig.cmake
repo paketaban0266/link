@@ -44,3 +44,4 @@ elseif(CMAKE_SYSTEM_NAME MATCHES "Linux|kFreeBSD|GNU")
 endif()
 
 include(${CMAKE_CURRENT_LIST_DIR}/cmake_include/AsioStandaloneConfig.cmake)
+set_property(TARGET Ableton::Link APPEND PROPERTY
