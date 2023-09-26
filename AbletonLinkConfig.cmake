@@ -14,3 +14,4 @@ INTERFACE_COMPILE_FEATURES
 )
 
 if(UNIX)
+  set_property(TARGET Ableton::Link APPEND PROPERTY
