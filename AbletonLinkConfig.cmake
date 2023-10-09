@@ -38,3 +38,8 @@ LINK_PLATFORM_LINUX=1
   set_property(TARGET Ableton::Link APPEND PROPERTY
  INTERFACE_LINK_LIBRARIES
     atomic
+  pthread
+  )
+endif()
+
+include(${CMAKE_CURRENT_LIST_DIR}/cmake_include/AsioStandaloneConfig.cmake)
