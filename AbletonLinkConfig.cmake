@@ -23,3 +23,6 @@ endif()
 if(APPLE)
   set_property(TARGET Ableton::Link APPEND PROPERTY
   INTERFACE_COMPILE_DEFINITIONS
+ LINK_PLATFORM_MACOSX=1
+  )
+elseif(WIN32)
