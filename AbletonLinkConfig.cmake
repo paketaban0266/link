@@ -26,3 +26,4 @@ if(APPLE)
  LINK_PLATFORM_MACOSX=1
   )
 elseif(WIN32)
+ set_property(TARGET Ableton::Link APPEND PROPERTY
