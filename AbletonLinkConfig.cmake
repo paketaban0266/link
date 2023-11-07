@@ -36,3 +36,5 @@ elseif(CMAKE_SYSTEM_NAME MATCHES "Linux|kFreeBSD|GNU")
   LINK_PLATFORM_LINUX=1
   )
   set_property(TARGET Ableton::Link APPEND PROPERTY
+  INTERFACE_LINK_LIBRARIES
+    atomic
