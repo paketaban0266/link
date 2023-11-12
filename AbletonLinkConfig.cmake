@@ -3,3 +3,4 @@ if(CMAKE_VERSION VERSION_LESS 3.0)
 endif()
 
 add_library(Ableton::Link IMPORTED INTERFACE)
+set_property(TARGET Ableton::Link APPEND PROPERTY
