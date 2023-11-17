@@ -16,3 +16,6 @@ set_property(TARGET Ableton::Link APPEND PROPERTY
 
 if(UNIX)
   set_property(TARGET Ableton::Link APPEND PROPERTY
+ INTERFACE_COMPILE_DEFINITIONS
+    LINK_PLATFORM_UNIX=1
+  )
