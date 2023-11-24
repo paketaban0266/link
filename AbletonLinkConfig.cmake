@@ -9,3 +9,4 @@ INTERFACE_INCLUDE_DIRECTORIES
 )
 
 # Force C++11 support for consuming targets
+set_property(TARGET Ableton::Link APPEND PROPERTY
