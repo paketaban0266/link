@@ -12,3 +12,7 @@ INTERFACE_INCLUDE_DIRECTORIES
 set_property(TARGET Ableton::Link APPEND PROPERTY
   INTERFACE_COMPILE_FEATURES
   cxx_generalized_initializers
+)
+
+if(UNIX)
+  set_property(TARGET Ableton::Link APPEND PROPERTY
