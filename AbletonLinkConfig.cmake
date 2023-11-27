@@ -24,3 +24,8 @@ endif()
 if(APPLE)
   set_property(TARGET Ableton::Link APPEND PROPERTY
     INTERFACE_COMPILE_DEFINITIONS
+  LINK_PLATFORM_UNIX=1
+  )
+endif()
+
+if(APPLE)
